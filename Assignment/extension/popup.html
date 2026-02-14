@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuardian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff9d" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <h1>CyberGuardian</h1>
+            </div>
+            <div class="status-indicator" id="status" title="Backend Status"></div>
+        </header>
+
+        <div class="chat-window" id="chat-window">
+            <div class="message system">
+                <div class="bubble">
+                    Welcome, Analyst. I am connected to the Neural Defense Grid. How can I assist you today?
+                    <br><br>
+                    Try asking:
+                    <ul>
+                        <li>"Calculate risk for a server with 5 open ports, 2 critical vulns, and importance 8."</li>
+                        <li>"Check threat intel for malicious-domain.com."</li>
+                        <li>"Monitor logs for failed_login events for 10 seconds."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Enter command..." autocomplete="off">
+            <button id="send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
